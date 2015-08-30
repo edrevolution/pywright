@@ -4,7 +4,7 @@ showrecord
 endmacro
 
 macro _default_court_record_button
-gui Button {_crbut} name=_crbut_ graphic=general/record x=177 y=192 hotkey=k_tab z=6 try_bottom
+gui Button {_crbut} name=_crbut_ graphic=general/record graphichigh=general/record_high x=177 y=192 hotkey=k_tab z=6 try_bottom
 endmacro
 
 macro show_court_record_button
@@ -148,40 +148,54 @@ macro theme_screen2
     goto $theme
     "ERROR, NO BIGBUTTON THEME {$theme}"
     label default
-        set _bigbutton_bg bg/main
+        set _bigbutton_bg bg/main2
         set _bigbutton_img general/buttonpress
         set _bigbutton_cross general/cross_exam_buttons
         set _screen2_scanlines off
+        set _list_bg_image bg/main2
         exit
     label phoenix
         print label phoenix
-        set _bigbutton_bg bg/mainpw
+        set _bigbutton_bg bg/main2pw
         set _bigbutton_img general/bigbutton/phoenix
         set _bigbutton_cross general/bigbutton/phoenix_cross
+        set _list_bg_image bg/main2
         endscript
     label empty
     label apollo
         print label apollo
-        set _bigbutton_bg bg/mainaj
+        set _bigbutton_bg bg/main2aj
         set _bigbutton_img general/bigbutton/empty
         set _bigbutton_cross general/bigbutton/empty_cross
+        set _list_bg_image bg/main2aj
         endscript
     label mia
         print label mia
-        set _bigbutton_bg bg/mainpw
+        set _bigbutton_bg bg/main2pw
         set _bigbutton_img general/bigbutton/mia
         set _bigbutton_cross general/bigbutton/mia_cross
+        set _list_bg_image bg/main2
         endscript
     label edgeworth
         print label edgeworth
-        set _bigbutton_bg bg/mainpw
+        set _bigbutton_bg bg/main2pw
         set _bigbutton_img general/bigbutton/edgeworth
         set _bigbutton_cross general/bigbutton/edgeworth_cross
+        set _list_bg_image bg/main2
         endscript
     label gk
         print label gk
-        set _bigbutton_bg bg/maingk
+        set _bigbutton_bg bg/main2gk
         set _bigbutton_img general/bigbutton/gk
         set _bigbutton_cross general/bigbutton/gk_cross
+        set _list_bg_image bg/main2gk
+        set _screen2_letterbox_img general/bigbutton/border
         endscript
+    label gk2
+        print label gk2
+        set _bigbutton_bg bg/main2gk2
+        set _butbutton_img general/bigbutton/gk2
+        set _bigbutton_cross general/bigutton/gk2_cross
+        set _list_bg_image bg/main2gk2
+        set _screen2_letterbox_img general/bigbutton/border
 endmacro
