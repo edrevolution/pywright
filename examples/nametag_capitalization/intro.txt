@@ -1,0 +1,31 @@
+char phoenix hide
+"Hi! I am Phoenix."
+"I can spell my name any way I want{n}and my nametag will appear{n}as "Phoenix"."
+
+char von Karma hide
+"Hi! I am von Karma."
+"Fools decided that my nametag{n}shall display "von", which is{n}absolutely wrong."
+
+char phoenix hide
+"That ain't right."
+
+char von_Karma hide
+"Exactly."
+"Wait, now it's even more wrong!"
+
+char phoenix hide
+"What?! Lemme fix that."
+clear top
+char von_Karma nametag=von_Karma hide
+"Ah, that's better."
+"At least some programmer has{n}the sense to fix this."
+
+char MacGuyver hide
+"Hi! I am MacGuyer."
+"Yeah, that nametag is wrong.{n}It's not "Macguyver"."
+"Let me fix that."
+nt
+"................."
+clear top
+char MacGuyver hide nametag=MacGuyver
+"There! Much better."
