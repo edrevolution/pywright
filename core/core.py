@@ -1,5 +1,6 @@
 from errors import *
 import sys
+sys.setdefaultencoding('utf8')
 sys.path.append("core/include")
 sys.path.append("include")
 import time
@@ -14,6 +15,8 @@ import textutil
 import registry
 import zipfile
 import simplejson as json
+import unicodedata
+os.environ["PYTHONIOENCODING"] = "utf-8"
 ImgFont = textutil.ImgFont
 try:
     import pygame.movie as pymovie
